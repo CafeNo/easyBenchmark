@@ -15,7 +15,7 @@ def memory_benchmark():
 
     stopTime = time.time()
     scoresTime = stopTime - startTime
-    print("Disk completed")
+    print("Memory completed")
     
     return scoresTime
 
