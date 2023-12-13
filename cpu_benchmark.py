@@ -10,7 +10,7 @@ def cpu_benchmark():
 
     
     end_time = time.time()
-    elapsed_time = end_time - start_time
+    elapsed_time = ( 1 / (end_time - start_time)) * 10000
     print("CPU completed")
     
     return elapsed_time
@@ -18,3 +18,6 @@ def cpu_benchmark():
 if __name__ == "__main__":
     elapsed_time = cpu_benchmark()
     print(f"Benchmark time: {elapsed_time} second elapsed")
+
+
+
