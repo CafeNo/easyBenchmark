@@ -14,7 +14,7 @@ def memory_benchmark():
         
 
     stopTime = time.time()
-    scoresTime = stopTime - startTime
+    scoresTime = (1 / (stopTime - startTime)) * 10000
     print("Memory completed")
     
     return scoresTime
@@ -23,3 +23,4 @@ if __name__ == "__main__":
 
     scores_memory = memory_benchmark()
     print(f'Memory Benchmark scores: {scores_memory}s.')
+
